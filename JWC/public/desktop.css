@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(70, 0, 120);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #250238;
+}
+
+#air {
+    color: rgba(0, 0, 0, 0);
+}
+
+*
+{
+    scroll-behavior: smooth;
+}
+
+h2,
+h1 {
+    font-weight: lighter;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: rgb(111, 26, 135);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.nav {
+    border: solid 2px #fff;
+    text-align: center;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.nav a {
+    float: right;
+    padding: 22px 22px;
+    font-size: 1.5rem;
+    /* font-size: 1.25rem; */
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.nav a:hover {
+    background-color: rgb(88, 6, 110);
+}
+
+.nav .icon:hover {
+    background: none;
+}
+
+.nav .icon {
+    display: none;
+    color: rgb(255, 255, 255);
+    background: none;
+    padding: 8px 8px;
+    margin: 12px 13px;
+    margin-bottom: 15px;
+    border: #fff solid 2px;
+    border-radius: 5px;
+}
+
+.st_content {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 280px;
+}
+
+.st_content .head {
+    font-size: 4rem;
+    /* font-size: 60px; */
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.st_content p {
+    font-size: 1.5rem;
+    display: inline;
+}
+
+.st_content button {
+    margin-top: 60px;
+    padding: 20px 70px;
+    font-size: 2rem;
+    border: 0;
+    background-color: #fff;
+    color: rgb(157, 71, 228);
+}
+
+.st_content button:active {
+    background-color: rgb(158, 40, 255);
+    color: rgb(255, 255, 255);
+}
+
+.nd_content {
+    margin: 150px 0;
+    padding: 0 10vw;
+    margin-bottom: 100px;
+    overflow: hidden;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+}
+
+.nd_content img {
+    width: 25.0625rem;
+    height: 30.625rem;
+    float: right;
+    border: #fff solid 3px;
+    margin-left: 30px;
+}
+
+
+.nd_content h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.nd_content p {
+    font-size: 2rem;
+}
+
+.review {
+    text-align: center;
+    overflow: hidden;
+}
+
+.review h1 {
+    font-size: 4rem;
+    margin-bottom: 80px;
+}
+
+.review h2 {
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+.review img {
+    border-radius: 100%;
+    border: #fff solid 3px;
+    width: 15rem;
+}
+
+.review p {
+    margin-top: -50px;
+    font-size: 1.5rem;
+}
+
+.review div {
+    padding: 0 4.5vw;
+}
+
+.review .content {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.contact {
+    margin-top: 100px;
+    overflow: hidden;
+    padding: 0 5vw;
+    margin-bottom: 100px;
+}
+
+.contact img {
+    float: left;
+    width: 35vw;
+    border: #fff solid 2px;
+
+}
+
+.contact h1 {
+    font-size: 3.25rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    margin-top: -25px;
+}
+
+.contact .data {
+    float: right;
+    width: 50vw;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Octopus_MuMu</title>
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <div class="nav" id="navbar">
+        <a class="icon" id="icon" onclick="myFunction()">&#9776;</a>
+        <div id="air"></div>
+        <a href="###" onclick="Q()" class="number">จองคิว</a>
+        <a href="index.html#review" class="txt">บทความ</a>
+        <a href="index.html#about" class="about">เกี่ยวกับหมอหมึก</a>
+    </div>
+    <div class="st_content" id="Q">
+        <h1 class="head">หมอหมึก</h1>
+        <p>ผู้มีประสบการณ์พยากรณ์กว่า 10 ปี</p>
+        <p>พร้อมคำพยากรณ์ที่แม่นยำ</p><br>
+        <button id="btn" onclick="Q()">จองคิว</button>
+    </div>
+    <script>
+        var btn = document.getElementById("btn")
+        var q = 0
+        var fi = []
+        const Q = () => {
+            let i = Math.floor(Math.random() * 11)
+            i += 1
+            if (fi[0] != null) {
+                console.log(fi[0]);
+                alert(`คิวของคุณคือคิวที่ ${fi[0]}`)
+            } else if (i == 11 || q == 11) {
+                q = 11
+                alert("ขออภัยคิววันนี้เต็มแล้ว")
+            } else if (i != 11) {
+                alert(`คุณได้คิวที่ ${i}`)
+                fi.push(i)
+                btn.innerHTML = "จองคิวสำเร็จ"
+            }
+        }
+    </script>
+    <div class="nd_content">
+        <div id="about" style="margin-top: 10px;"></div>
+        <img id="nd_nd"
+            src="https://cdn.shopify.com/s/files/1/0437/4950/7224/products/Octopus_6c9af920-4648-4a07-932f-ee26e54992fe_800x.jpg?v=1602633376"
+            alt="ภาพไม่โหลด">
+        <div id="st_nd">
+            <h2>ประวัติหมอหมึก</h2>
+            <p>หมอหมึกเป็นนักพยากรณ์ที่ชำนาญด้านการทำนายดวงด้วยลูกแก้วพยากรณ์ไพ่ทาโร และการดูลายมือ</p>
+            <p>ด้วยความสามารถที่หลากหลาย
+                ทำให้หมอหมึกสามารถเลือกวิธีการทำนายที่เหมาะกับแต่ละบุคคลเพื่อให้ได้ผลลัพธ์แม่นยำที่สุด
+            </p>
+        </div>
+    </div>
+    <div class="review" id="review">
+        <h1>รีวิวจากลูกค้า</h1>
+        <div class="content">
+            <div class="st">
+                <img src="https://img.myloview.com/stickers/business-man-icon-vector-isolated-on-white-logo-sign-and-symbol-400-226846432.jpg"
+                    alt="ภาพไม่โหลด">
+                <h2>แมทธิว นักธุรกิจ</h2>
+                <p>หมอหมึกช่วยผมเรื่องฤกษ์ยามในการเจรจาธุรกิจได้มากเลยตอนนี้ขายดีเทน้ำเทท่าเลยครับ</p>
+            </div>
+            <div class="nd">
+                <img src="https://1417094351.rsc.cdn77.org/articles/5925/5924792/thumbnail/small.gif?1"
+                    alt="ภาพไม่โหลด">
+                <h2>แจ็ค นักแสดง</h2>
+                <p>ต้องขอบคุณหมอหมึกในการช่วยให้ความสัมพันธ์ราบรื่นด้วยนะคะทำนายอะไรไว้ก็แม่นทุกอย่างเลยค่ะ</p>
+            </div>
+            <div class="rd">
+                <img src="https://i.pinimg.com/736x/46/5e/0d/465e0db3e6f531eb2f05987a013a23ad.jpg">
+                <h2>น้ำใส นักศึกษา</h2>
+                <p>ที่หมอหมึกบอกมานะคะ เกิดเกือบหมดเลยค่ะ ถ้าไม่ได้หมอหมึกช่วยไว้ ชีวิตคงแย่เลยคะ
+                    ดีนะที่ป้องกันเรื่องร้ายๆทันเวลา</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="data">
+            <h1>ทำนายชะตากับหมอหมึก</h1><br>
+            <p>สามารถจองคิวได้ในเว็บ หรือ</p>
+            <p>อีเมล: octopus_fortune@teller.com</p>
+            <p>โทรศัพท์: 099 XXXX XXX</p>
+            <p>และมาสำนักที่</p>
+            <p>ชั้น 12 อาคาร JWC ถนนโปรแกรมมิ่ง แขวงเว็บ เขตอินเตอร์เน็ต กรุงเทพ 99999</p>
+            <p>ตามเวลาที่นัดไว้</p><br>
+            <p>จำกัดที่ 10 คิวต่อหนึ่งวัน เปิดทำการ</p>
+            <p>10:00 - 18:30 น. พัก 12:00 - 13:00</p>
+            <p>เปิดทุกวันอังคารถึงวันเสาร์ หยุดวันจันทร์และวันอาทิตย์</p>
+        </div>
+        <img src="https://i.pinimg.com/736x/89/ab/b3/89abb3f3d44731bc3d56287aeaecd731--neverland-map-disney-bedrooms.jpg"
+            alt="ภาพไม่โหลด">
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            var icon = document.getElementById("icon");
+            var air = document.getElementById("air");
+            var profile = document.getElementById("st_nd");
+            var pic = document.getElementById("nd_nd");
+            let timeOut = 0
+
+            if (x.className === "nav") {
+                icon.style.transition = "0.5s"
+                icon.style.fontSize = "15px"
+                icon.style.transform = "rotate(90deg)"
+                timeOut += 550
+                setTimeout(() => {
+                    air.innerHTML = `<a id="air">###</a>`
+                    x.className = "navresponsive"
+                }, timeOut);
+            } else {
+                icon.style.transition = "0.5s"
+                icon.style.transform = "rotate(0deg)"
+                timeOut += 550
+                setTimeout(() => {
+                    air.innerHTML = `<div id="air"></div>`
+                    x.className = "nav";
+                }, timeOut);
+            }
+        }
+    </script>
+</body>
+
+</html>
